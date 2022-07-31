@@ -20,7 +20,6 @@ class MovieTableViewController: UITableViewController {
         movieService = MovieService(managedObjectContext: coreData.persistentContainer.viewContext)
         loadData()
         tableView.allowsSelection = false
-        fetchedResultController?.delegate = self
     }
     
     //MARK: - Selectors
@@ -59,10 +58,32 @@ class MovieTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            guard let movieToDelete = fetchedResultController?.object(at: indexPath),
+                  let title = movieToDelete.title else { return }
+            
+            let confirmAlertController = UIAlertController(title: "Remove Movie",
+                                                           message: "Are you sure you would like to delete \(title)?",
+                                                           preferredStyle: .actionSheet)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { [weak self] _ in
+                self?.coreData.persistentContainer.viewContext.delete(movieToDelete)
+                self?.coreData.saveContext()
+            }
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            confirmAlertController.addAction(deleteAction)
+            confirmAlertController.addAction(cancelAction)
+            present(confirmAlertController, animated: true)
+        }
+    }
+    
     //MARK: - Private functions
     
     private func loadData() {
         fetchedResultController = movieService?.getMovies()
+        fetchedResultController?.delegate = self
     }
     
  }
@@ -80,6 +101,8 @@ extension MovieTableViewController: NSFetchedResultsControllerDelegate {
         switch type {
         case .update:
             tableView.reloadRows(at: [indexPath], with: .fade)
+        case .delete:
+            tableView.deleteRows(at: [indexPath], with: .fade)
         default:
             break
         }
