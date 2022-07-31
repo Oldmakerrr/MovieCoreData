@@ -45,6 +45,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rv0-0h-nJA" customClass="UserRating" customModule="MovieCoreData" customModuleProvider="target">
                                             <rect key="frame" x="88" y="48" width="201" height="32"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="201" id="B49-P3-Zcr"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -52,10 +55,10 @@
                                         <constraint firstItem="BWg-ae-kLF" firstAttribute="leading" secondItem="GVl-ql-iW6" secondAttribute="leading" constant="20" symbolic="YES" id="4i4-GU-Lcy"/>
                                         <constraint firstItem="rv0-0h-nJA" firstAttribute="leading" secondItem="BWg-ae-kLF" secondAttribute="trailing" constant="8" symbolic="YES" id="Egd-db-zWc"/>
                                         <constraint firstAttribute="trailing" secondItem="jwG-5Z-Aeo" secondAttribute="trailing" constant="20" symbolic="YES" id="R8I-qU-9Re"/>
-                                        <constraint firstItem="hmj-Qg-faA" firstAttribute="leading" secondItem="rv0-0h-nJA" secondAttribute="trailing" constant="59" id="VMw-TG-x6e"/>
                                         <constraint firstItem="jwG-5Z-Aeo" firstAttribute="leading" secondItem="BWg-ae-kLF" secondAttribute="trailing" constant="8" symbolic="YES" id="Vqp-Cv-llM"/>
                                         <constraint firstAttribute="trailing" secondItem="hmj-Qg-faA" secondAttribute="trailing" constant="20" symbolic="YES" id="YAq-xd-gVj"/>
                                         <constraint firstItem="jwG-5Z-Aeo" firstAttribute="top" secondItem="BWg-ae-kLF" secondAttribute="top" id="c8H-np-rbL"/>
+                                        <constraint firstItem="hmj-Qg-faA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rv0-0h-nJA" secondAttribute="trailing" constant="59" id="eeJ-zX-dc7"/>
                                         <constraint firstItem="rv0-0h-nJA" firstAttribute="bottom" secondItem="BWg-ae-kLF" secondAttribute="bottom" id="mEf-OR-BvM"/>
                                         <constraint firstItem="hmj-Qg-faA" firstAttribute="bottom" secondItem="BWg-ae-kLF" secondAttribute="bottom" id="u58-Me-rm4"/>
                                         <constraint firstItem="rv0-0h-nJA" firstAttribute="top" secondItem="jwG-5Z-Aeo" secondAttribute="bottom" constant="17" id="uvS-Wx-gJQ"/>
@@ -76,7 +79,13 @@
                             <outlet property="delegate" destination="Wqu-YL-FY1" id="efD-t7-Dnu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Movies" id="Vw4-Yv-Ggg"/>
+                    <navigationItem key="navigationItem" title="My Movies" id="Vw4-Yv-Ggg">
+                        <barButtonItem key="rightBarButtonItem" title="Reset Ratings" id="OBQ-8J-6as">
+                            <connections>
+                                <action selector="resetRatingsAction:" destination="Wqu-YL-FY1" id="ZHc-Se-nZl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5v-Hs-WtS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

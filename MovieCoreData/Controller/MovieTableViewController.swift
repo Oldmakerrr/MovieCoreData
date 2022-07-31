@@ -10,6 +10,7 @@ import CoreData
 
 class MovieTableViewController: UITableViewController {
     
+   
     private var coreData = CoreDataStack()
     private var fetchedResultController: NSFetchedResultsController<Movie>?
     private var movieService: MovieService?
@@ -20,6 +21,18 @@ class MovieTableViewController: UITableViewController {
         loadData()
         tableView.allowsSelection = false
         fetchedResultController?.delegate = self
+    }
+    
+    //MARK: - Selectors
+    
+    @IBAction func resetRatingsAction(_ sender: UIBarButtonItem) {
+        movieService?.resetAllRatings(completion: { [weak self] success in
+            if success {
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
+            }
+        })
     }
 
     // MARK: - Table view data source
@@ -51,7 +64,10 @@ class MovieTableViewController: UITableViewController {
     private func loadData() {
         fetchedResultController = movieService?.getMovies()
     }
+    
  }
+
+//MARK: - NSFetchedResultsControllerDelegate
 
 extension MovieTableViewController: NSFetchedResultsControllerDelegate {
     
