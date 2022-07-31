@@ -45,7 +45,12 @@ class MovieTableViewController: UITableViewController {
         guard let sections = fetchedResultController?.sections else { return 0 }
         return sections[section].numberOfObjects
     }
-
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let sections = fetchedResultController?.sections else { return "" }
+        let currentSection = sections[section]
+        return currentSection.name
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as! MovieTableViewCell

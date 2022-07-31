@@ -20,14 +20,14 @@ struct MovieService {
     func getMovies() -> NSFetchedResultsController<Movie> {
         let fetchedResultsController: NSFetchedResultsController<Movie>
         let request: NSFetchRequest<Movie> = Movie.fetchRequest()
+        let formatSort = NSSortDescriptor(key: "format", ascending: true)
         let nameSort = NSSortDescriptor(key: "title", ascending: true)
-        let raitingSort = NSSortDescriptor(key: "userRating", ascending: true)
-        request.sortDescriptors = [nameSort, raitingSort]
+        request.sortDescriptors = [formatSort, nameSort]
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: request,
                                                               managedObjectContext: managedObjectContext,
-                                                              sectionNameKeyPath: nil,
-                                                              cacheName: nil)
+                                                              sectionNameKeyPath: "format",
+                                                              cacheName: "MovieLibrary")
         
         do {
             try fetchedResultsController.performFetch()
