@@ -20,22 +20,6 @@
 		188EA0F128966398000A5506 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA0F028966398000A5506 /* CoreDataStack.swift */; };
 		188EA0F6289669F7000A5506 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA0F5289669F7000A5506 /* MovieTableViewCell.swift */; };
 		188EA0F828966BBC000A5506 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA0F728966BBC000A5506 /* MovieTableViewController.swift */; };
-		188EA10B28966C57000A5506 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA0FB28966C57000A5506 /* batman.png */; };
-		188EA10C28966C57000A5506 /* pirates.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA0FC28966C57000A5506 /* pirates.png */; };
-		188EA10D28966C57000A5506 /* jurassic.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA0FD28966C57000A5506 /* jurassic.png */; };
-		188EA10E28966C57000A5506 /* pixar.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA0FE28966C57000A5506 /* pixar.png */; };
-		188EA10F28966C57000A5506 /* xmen.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA0FF28966C57000A5506 /* xmen.png */; };
-		188EA11028966C57000A5506 /* Ted2.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10028966C57000A5506 /* Ted2.png */; };
-		188EA11128966C57000A5506 /* transformer.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10128966C57000A5506 /* transformer.png */; };
-		188EA11228966C57000A5506 /* lordoftherings.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10228966C57000A5506 /* lordoftherings.png */; };
-		188EA11328966C57000A5506 /* yellowstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10328966C57000A5506 /* yellowstar.png */; };
-		188EA11428966C57000A5506 /* startrek.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10428966C57000A5506 /* startrek.png */; };
-		188EA11528966C57000A5506 /* madmax.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10528966C57000A5506 /* madmax.png */; };
-		188EA11628966C57000A5506 /* terminator.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10628966C57000A5506 /* terminator.png */; };
-		188EA11728966C57000A5506 /* harrypotter.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10728966C57000A5506 /* harrypotter.png */; };
-		188EA11828966C57000A5506 /* ultimatepixar.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10828966C57000A5506 /* ultimatepixar.png */; };
-		188EA11928966C57000A5506 /* starwars.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10928966C57000A5506 /* starwars.png */; };
-		188EA11A28966C57000A5506 /* blackstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10A28966C57000A5506 /* blackstar.png */; };
 		188EA11C28967C21000A5506 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA11B28967C21000A5506 /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,22 +39,6 @@
 		188EA0F028966398000A5506 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		188EA0F5289669F7000A5506 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		188EA0F728966BBC000A5506 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
-		188EA0FB28966C57000A5506 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman.png; sourceTree = "<group>"; };
-		188EA0FC28966C57000A5506 /* pirates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pirates.png; sourceTree = "<group>"; };
-		188EA0FD28966C57000A5506 /* jurassic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jurassic.png; sourceTree = "<group>"; };
-		188EA0FE28966C57000A5506 /* pixar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixar.png; sourceTree = "<group>"; };
-		188EA0FF28966C57000A5506 /* xmen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmen.png; sourceTree = "<group>"; };
-		188EA10028966C57000A5506 /* Ted2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ted2.png; sourceTree = "<group>"; };
-		188EA10128966C57000A5506 /* transformer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transformer.png; sourceTree = "<group>"; };
-		188EA10228966C57000A5506 /* lordoftherings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lordoftherings.png; sourceTree = "<group>"; };
-		188EA10328966C57000A5506 /* yellowstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowstar.png; sourceTree = "<group>"; };
-		188EA10428966C57000A5506 /* startrek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startrek.png; sourceTree = "<group>"; };
-		188EA10528966C57000A5506 /* madmax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madmax.png; sourceTree = "<group>"; };
-		188EA10628966C57000A5506 /* terminator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terminator.png; sourceTree = "<group>"; };
-		188EA10728966C57000A5506 /* harrypotter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harrypotter.png; sourceTree = "<group>"; };
-		188EA10828966C57000A5506 /* ultimatepixar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ultimatepixar.png; sourceTree = "<group>"; };
-		188EA10928966C57000A5506 /* starwars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starwars.png; sourceTree = "<group>"; };
-		188EA10A28966C57000A5506 /* blackstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackstar.png; sourceTree = "<group>"; };
 		188EA11B28967C21000A5506 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,11 +72,10 @@
 		180F2A7D289658E50081F3F5 /* MovieCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				188EA0FA28966C57000A5506 /* images */,
-				180F2A95289659400081F3F5 /* Model */,
 				180F2A7E289658E50081F3F5 /* AppDelegate.swift */,
-				188EA11B28967C21000A5506 /* MovieService.swift */,
 				180F2A80289658E50081F3F5 /* SceneDelegate.swift */,
+				180F2A95289659400081F3F5 /* Model */,
+				188EA11D289694A3000A5506 /* Service */,
 				188EA0F22896678E000A5506 /* View */,
 				188EA0F928966BC0000A5506 /* Controller */,
 				188EA0EE289662C5000A5506 /* movies.json */,
@@ -148,27 +115,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		188EA0FA28966C57000A5506 /* images */ = {
+		188EA11D289694A3000A5506 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				188EA0FB28966C57000A5506 /* batman.png */,
-				188EA0FC28966C57000A5506 /* pirates.png */,
-				188EA0FD28966C57000A5506 /* jurassic.png */,
-				188EA0FE28966C57000A5506 /* pixar.png */,
-				188EA0FF28966C57000A5506 /* xmen.png */,
-				188EA10028966C57000A5506 /* Ted2.png */,
-				188EA10128966C57000A5506 /* transformer.png */,
-				188EA10228966C57000A5506 /* lordoftherings.png */,
-				188EA10328966C57000A5506 /* yellowstar.png */,
-				188EA10428966C57000A5506 /* startrek.png */,
-				188EA10528966C57000A5506 /* madmax.png */,
-				188EA10628966C57000A5506 /* terminator.png */,
-				188EA10728966C57000A5506 /* harrypotter.png */,
-				188EA10828966C57000A5506 /* ultimatepixar.png */,
-				188EA10928966C57000A5506 /* starwars.png */,
-				188EA10A28966C57000A5506 /* blackstar.png */,
+				188EA11B28967C21000A5506 /* MovieService.swift */,
 			);
-			path = images;
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,25 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188EA10E28966C57000A5506 /* pixar.png in Resources */,
-				188EA11828966C57000A5506 /* ultimatepixar.png in Resources */,
-				188EA11528966C57000A5506 /* madmax.png in Resources */,
-				188EA10D28966C57000A5506 /* jurassic.png in Resources */,
-				188EA11728966C57000A5506 /* harrypotter.png in Resources */,
-				188EA11028966C57000A5506 /* Ted2.png in Resources */,
-				188EA11428966C57000A5506 /* startrek.png in Resources */,
-				188EA11A28966C57000A5506 /* blackstar.png in Resources */,
-				188EA11128966C57000A5506 /* transformer.png in Resources */,
-				188EA11628966C57000A5506 /* terminator.png in Resources */,
-				188EA10F28966C57000A5506 /* xmen.png in Resources */,
-				188EA10C28966C57000A5506 /* pirates.png in Resources */,
 				180F2A8E289658E80081F3F5 /* LaunchScreen.storyboard in Resources */,
-				188EA11228966C57000A5506 /* lordoftherings.png in Resources */,
 				180F2A8B289658E80081F3F5 /* Assets.xcassets in Resources */,
 				188EA0EF289662C5000A5506 /* movies.json in Resources */,
-				188EA10B28966C57000A5506 /* batman.png in Resources */,
-				188EA11928966C57000A5506 /* starwars.png in Resources */,
-				188EA11328966C57000A5506 /* yellowstar.png in Resources */,
 				180F2A86289658E50081F3F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

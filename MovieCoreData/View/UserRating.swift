@@ -16,6 +16,7 @@ class UserRating: UIView {
         }
     }
     
+    var ratingUpdateHandler: ((_ rating: Int) -> Void)?
     var ratingButtons = [UIButton]()
     var spacing = 5
     var stars = 5
@@ -32,8 +33,9 @@ class UserRating: UIView {
             
             button.setImage(emptyStarImage, for: .normal)
             button.setImage(filledStarImage, for: .selected)
+            button.addTarget(self, action: #selector(UserRating.didTappedRatingButton(button:)), for: .touchUpInside)
             
-            ratingButtons += [button]
+            ratingButtons.append(button)
             addSubview(button)
         }
     }
@@ -63,6 +65,12 @@ class UserRating: UIView {
             button.isSelected = x < rating
             x += 1
         }
+    }
+    
+    @objc private func didTappedRatingButton(button: UIButton) {
+        guard let buttonIndex = ratingButtons.firstIndex(of: button) else { return }
+        rating = buttonIndex + 1
+        ratingUpdateHandler?(rating)
     }
 }
 

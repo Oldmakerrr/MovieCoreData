@@ -14,6 +14,13 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var movieFormatLabel: UILabel!
     @IBOutlet weak var userRating: UserRating!
+    
+    var userRatingHandler: ((_ rating: Int) -> Void)? {
+        didSet {
+            guard let userRatingHandler = userRatingHandler else { return }
+            userRating.ratingUpdateHandler = userRatingHandler
+        }
+    }
 
     func configureCell(_ movie: Movie) {
         movieTitleLabel.text = movie.title

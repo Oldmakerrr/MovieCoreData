@@ -12,10 +12,14 @@ class MovieTableViewController: UITableViewController {
     
     private var coreData = CoreDataStack()
     private var fetchedResultController: NSFetchedResultsController<Movie>?
+    private var movieService: MovieService?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        movieService = MovieService(managedObjectContext: coreData.persistentContainer.viewContext)
         loadData()
+        tableView.allowsSelection = false
+        fetchedResultController?.delegate = self
     }
 
     // MARK: - Table view data source
@@ -35,6 +39,9 @@ class MovieTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as! MovieTableViewCell
         if let movie = fetchedResultController?.object(at: indexPath) {
             cell.configureCell(movie)
+            cell.userRatingHandler = { [weak self] newRating in
+                self?.movieService?.updateRating(for: movie, with: newRating)
+            }
         }
         return cell
     }
@@ -42,6 +49,27 @@ class MovieTableViewController: UITableViewController {
     //MARK: - Private functions
     
     private func loadData() {
-        fetchedResultController = MovieService.getMovies(moc: coreData.persistentContainer.viewContext)
+        fetchedResultController = movieService?.getMovies()
     }
  }
+
+extension MovieTableViewController: NSFetchedResultsControllerDelegate {
+    
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        guard let indexPath = indexPath else { return }
+        switch type {
+        case .update:
+            tableView.reloadRows(at: [indexPath], with: .fade)
+        default:
+            break
+        }
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
+    }
+}
