@@ -18,6 +18,7 @@
 		188EA0EB28965AB3000A5506 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA0E928965AB3000A5506 /* Movie+CoreDataProperties.swift */; };
 		188EA0ED28965B8A000A5506 /* UserRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA0EC28965B8A000A5506 /* UserRating.swift */; };
 		188EA0EF289662C5000A5506 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 188EA0EE289662C5000A5506 /* movies.json */; };
+		188EA0F128966398000A5506 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA0F028966398000A5506 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		188EA0E928965AB3000A5506 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		188EA0EC28965B8A000A5506 /* UserRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRating.swift; sourceTree = "<group>"; };
 		188EA0EE289662C5000A5506 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		188EA0F028966398000A5506 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				188EA0E828965AB3000A5506 /* Movie+CoreDataClass.swift */,
 				188EA0E928965AB3000A5506 /* Movie+CoreDataProperties.swift */,
+				188EA0F028966398000A5506 /* CoreDataStack.swift */,
 				180F2A87289658E50081F3F5 /* MovieCoreData.xcdatamodeld */,
 			);
 			path = Model;
@@ -169,6 +172,7 @@
 				188EA0EB28965AB3000A5506 /* Movie+CoreDataProperties.swift in Sources */,
 				180F2A81289658E50081F3F5 /* SceneDelegate.swift in Sources */,
 				188EA0ED28965B8A000A5506 /* UserRating.swift in Sources */,
+				188EA0F128966398000A5506 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
