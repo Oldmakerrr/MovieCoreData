@@ -36,6 +36,7 @@
 		188EA11828966C57000A5506 /* ultimatepixar.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10828966C57000A5506 /* ultimatepixar.png */; };
 		188EA11928966C57000A5506 /* starwars.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10928966C57000A5506 /* starwars.png */; };
 		188EA11A28966C57000A5506 /* blackstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 188EA10A28966C57000A5506 /* blackstar.png */; };
+		188EA11C28967C21000A5506 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EA11B28967C21000A5506 /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		188EA10828966C57000A5506 /* ultimatepixar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ultimatepixar.png; sourceTree = "<group>"; };
 		188EA10928966C57000A5506 /* starwars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starwars.png; sourceTree = "<group>"; };
 		188EA10A28966C57000A5506 /* blackstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackstar.png; sourceTree = "<group>"; };
+		188EA11B28967C21000A5506 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				188EA0FA28966C57000A5506 /* images */,
 				180F2A95289659400081F3F5 /* Model */,
 				180F2A7E289658E50081F3F5 /* AppDelegate.swift */,
+				188EA11B28967C21000A5506 /* MovieService.swift */,
 				180F2A80289658E50081F3F5 /* SceneDelegate.swift */,
 				188EA0F22896678E000A5506 /* View */,
 				188EA0F928966BC0000A5506 /* Controller */,
@@ -260,6 +263,7 @@
 				188EA0F6289669F7000A5506 /* MovieTableViewCell.swift in Sources */,
 				180F2A7F289658E50081F3F5 /* AppDelegate.swift in Sources */,
 				188EA0EA28965AB3000A5506 /* Movie+CoreDataClass.swift in Sources */,
+				188EA11C28967C21000A5506 /* MovieService.swift in Sources */,
 				188EA0EB28965AB3000A5506 /* Movie+CoreDataProperties.swift in Sources */,
 				188EA0F828966BBC000A5506 /* MovieTableViewController.swift in Sources */,
 				180F2A81289658E50081F3F5 /* SceneDelegate.swift in Sources */,
